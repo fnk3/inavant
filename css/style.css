@@ -53,6 +53,11 @@ nav.main li.dd .menu a:hover { background: #242427; color: #fff; }
 .hero-inner h1 { color: #fff; font-size: clamp(36px, 5.5vw, 64px); font-weight: 700; margin-bottom: 14px; }
 .hero-inner h1 .dot { color: var(--red); }
 .hero-inner .sub { color: rgba(255,255,255,.72); font-size: clamp(15px, 1.6vw, 19px); font-weight: 400; line-height: 1.55; margin-bottom: 34px; }
+.hero-inner .sub .pitch {
+  background: var(--red); color: #fff; font-weight: 700; text-transform: uppercase;
+  padding: 2px 10px; border-radius: 5px; font-family: 'Montserrat', sans-serif;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3); text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+}
 
 .page-hero { position: relative; background: var(--dark); padding: 72px 24px; overflow: hidden; }
 .page-hero img.pattern { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .3; }
@@ -77,6 +82,10 @@ section.band.dark { background: var(--dark); color: rgba(255,255,255,.85); }
 .wrap { max-width: var(--max); margin: 0 auto; }
 h2.sec { font-size: 30px; margin-bottom: 8px; }
 h2.sec::after { content: ""; display: block; width: 56px; height: 4px; background: var(--red); margin-top: 10px; }
+h2.sec.rule-full::after { width: 100%; }
+h2.sec.no-rule::after { display: none; }
+h2.sec.centered { text-align: center; }
+h2.sec.centered::after { margin-left: auto; margin-right: auto; }
 section.band.dark h2.sec { color: #fff; }
 p.lead { color: var(--grey-mid); margin: 18px 0 36px; max-width: 680px; }
 section.band.dark p.lead { color: rgba(255,255,255,.65); }
@@ -178,7 +187,7 @@ footer.site .legal { max-width: var(--max); margin: 36px auto 0; padding-top: 18
 .attack .card h3 { display: flex; align-items: center; gap: 10px; }
 .attack .card .num { color: var(--red); font: 700 26px 'Montserrat', sans-serif; }
 .cred-strip { display: flex; flex-wrap: wrap; gap: 18px; justify-content: center; margin-top: 28px; }
-.cred { background: #fff; border: 1px solid #e4e4e7; border-radius: 6px; padding: 16px 22px; text-align: center; min-width: 200px; }
+.cred { background: #fff; border: 1px solid #e4e4e7; border-top: 3px solid var(--red); border-radius: 6px; padding: 16px 22px; text-align: center; min-width: 200px; }
 .cred h4 { font: 700 14px 'Montserrat', sans-serif; text-transform: uppercase; letter-spacing: .5px; }
 .cred p { font-size: 13px; color: var(--grey-mid); margin-top: 4px; }
 .btn.outline { border: 1.5px solid var(--red); border-radius: 4px; padding: 10px 22px; color: var(--ink); font-weight: 600; text-decoration: none; display: inline-block; }
